@@ -6,5 +6,6 @@
     "js": "index.js",
     "css": "style.css",
     "author": "Your Name",
+    "homePage": "https://github.com/datasiro/prompt_manager_final"
     "version": "2.4.0"
 }
