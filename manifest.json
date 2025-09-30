@@ -1,0 +1,10 @@
+{
+    "display_name": "Prompt Manager (Global Presets)",
+    "loading_order": 10,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Your Name",
+    "version": "2.4.0"
+}

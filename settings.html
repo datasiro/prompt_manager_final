@@ -1,0 +1,57 @@
+<div class="prompt_manager_settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>Prompt Manager</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <fieldset class="pm_fieldset">
+                <legend>Global Presets (Save/Load All)</legend>
+                <div class="pm_global_preset_controls">
+                    <select id="pm_global_preset_select" class="text_pole"></select>
+                    <button id="pm_global_load_button" class="menu_button">Load</button>
+                    <button id="pm_global_save_button" class="menu_button" title="Save current prompts and templates">
+                        <i class="fa-solid fa-save"></i>
+                    </button>
+                    <button id="pm_global_delete_button" class="menu_button MDI-Icon material-icons red--text" title="Delete Selected Global Preset">delete</button>
+                </div>
+            </fieldset>
+
+            <fieldset class="pm_fieldset">
+                <legend>Active Prompts</legend>
+                <div id="pm_prompt_list_container">
+                    </div>
+                <button id="pm_add_prompt_button" class="menu_button"><i class="fa-solid fa-plus"></i> Add Prompt</button>
+            </fieldset>
+        </div>
+    </div>
+</div>
+
+<template id="pm_prompt_template">
+    <div class="pm_prompt_item">
+        <div class="pm_prompt_header">
+            <label class="checkbox_label"><input type="checkbox" class="pm_prompt_enabled"> Enabled</label>
+            <button class="menu_button MDI-Icon material-icons red--text pm_remove_prompt_button" title="Remove this prompt">close</button>
+        </div>
+        <textarea class="text_pole pm_prompt_text" rows="3" placeholder="AI에게 주입할 프롬프트..."></textarea>
+        <div class="pm_prompt_options">
+            <select class="text_pole pm_prompt_position">
+                <option value="deep_system">System (@D ⚙️)</option>
+                <option value="deep_user">User (@D 👤)</option>
+                <option value="deep_assistant">AI (@D 🤖)</option>
+            </select>
+            <label>Depth: <input type="number" class="text_pole pm_prompt_depth" min="0" max="100"></label>
+        </div>
+        
+        <fieldset class="pm_template_fieldset">
+            <legend>Text Templates</legend>
+            <div class="pm_template_controls">
+                <select class="text_pole pm_template_select" title="Select to load a template"></select>
+                <button class="menu_button pm_template_save_button" title="Save current text as a template">
+                    <i class="fa-solid fa-save"></i>
+                </button>
+                <button class="menu_button MDI-Icon material-icons red--text pm_template_delete_button" title="Delete Selected Template">delete</button>
+            </div>
+        </fieldset>
+    </div>
+</template>
