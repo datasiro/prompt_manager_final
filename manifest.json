@@ -5,7 +5,8 @@
     "optional": [],
     "js": "index.js",
     "css": "style.css",
-    "author": "Your Name",
+    "author": "GG",
+    "version": "2.4.0",
     "homePage": "https://github.com/datasiro/prompt_manager_final",
-    "version": "2.4.0"
+    "auto_update": false
 }
